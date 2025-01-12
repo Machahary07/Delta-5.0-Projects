@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Months in a Quarter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-80">
+        <h1 class="text-xl font-bold text-center mb-4">Months in a Quarter</h1>
+        <label for="quarter" class="block text-gray-700 font-medium mb-2">Select a Quarter:</label>
+        <select id="quarter" class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 mb-4">
+            <option value="" selected>Select...</option>
+            <option value="1">Quarter 1</option>
+            <option value="2">Quarter 2</option>
+            <option value="3">Quarter 3</option>
+            <option value="4">Quarter 4</option>
+        </select>
+        <button 
+            onclick="printMonthsInQuarter()" 
+            class="bg-blue-500 text-white w-full py-2 rounded-md hover:bg-blue-600 transition">
+            Show Months
+        </button>
+        <p id="result" class="mt-4 text-center text-gray-700 font-medium"></p>
+    </div>
+
+    <script src="/Js/Qs3 QtrMonth.js">
+    </script>
+</body>
+</html>
