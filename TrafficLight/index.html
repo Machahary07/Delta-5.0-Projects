@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .traffic-light {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto text-center">
+        <div id="trafficLight" class="traffic-light bg-gray-300">
+            <!-- Traffic Light Color will be displayed here -->
+        </div>
+        <p id="message" class="text-2xl mt-4"></p>
+        <button id="changeLight" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+            Change Light
+        </button>
+    </div>
+
+    <script src="/TrafficLight/light.js"></script>
+</body>
+</html>
